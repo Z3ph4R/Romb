@@ -1,25 +1,23 @@
 fn main() {
-    const SIZE: usize = 5; // розмір ромба
+    const SIZE: usize = 5;
 
-    // Малюємо верхню частину ромба
     for i in 0..SIZE {
         for j in 0..(SIZE - i - 1) {
-            print!(" "); // Додаємо пробіли зліва
+            print!(" ");
         }
         for j in 0..(2 * i + 1) {
-            print!("*"); // Малюємо зірочки
+            print!("*");
         }
-        println!(); // Перехід на новий рядок
+        println!();
     }
 
-    // Малюємо нижню частину ромба
     for i in (0..SIZE - 1).rev() {
         for j in 0..(SIZE - i - 1) {
-            print!(" "); // Додаємо пробіли зліва
+            print!(" ");
         }
         for j in 0..(2 * i + 1) {
-            print!("*"); // Малюємо зірочки
+            print!("*");
         }
-        println!(); // Перехід на новий рядок
+        println!();
     }
 }
